@@ -1,0 +1,236 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 730px;
+}
+
+.result, .summary{
+    width: 100%;
+}
+
+.result{
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+    margin: 0;
+    border-bottom-left-radius: 37.5px;
+    border-bottom-right-radius: 37.5px;
+    text-align: center;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+h1{
+    margin: 0;
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 500;
+}
+
+.circle{
+    margin: 0;
+    background: linear-gradient(to top,hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 35%;
+    margin-inline: auto;
+    border-radius: 100%;
+    padding: 1.25rem;
+}
+
+.score{
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+.circle p{
+    font-size: .75rem;
+    color: hsl(241, 100%, 75%);
+    font-weight: 500;
+}
+
+.appraisal{
+    width: 85%;
+    margin-inline: auto;
+}
+
+.appraisal h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.appraisal p{
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    margin-top: .75rem;
+}
+
+.summary{
+    width: 85%;
+    margin-inline: auto;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.rating{
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    padding: 1.15rem;
+    border-radius: 7.96875px;
+}
+
+.rating{
+    font-weight: 700;
+}
+
+.label{
+    align-items: center;
+    gap: .75rem;
+}
+
+.reaction{
+    background: hsl(0, 100%, 95%);
+}
+
+.reaction div{
+    color: hsl(0, 100%, 67%);
+}
+
+.memory{
+    background: hsl(39, 100%, 95%);
+}
+
+.memory div{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background: hsl(166, 100%,95%);
+}
+
+.verbal div{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background: hsl(234, 85%, 95%);
+}
+
+.visual div{
+    color: hsl(234, 85%, 45%);
+}
+
+.over{
+    color: hsl(224, 30%, 70%);
+}
+
+button{
+    width: 100%;
+    font-size: 1.25rem;
+    border: none;
+    padding: .65em 1.5em;
+    border-radius: 31.875px;
+    font-weight: 500;
+    color: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    background: hsl(224, 30%, 27%);
+    transition: 0.5s;
+}
+
+button:hover{
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    color: hsl(0, 0%, 100%);
+}
+
+h2, p{
+    margin: 0;
+}
+
+
+.attribution {
+    font-size: 11px;
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+#user-name{
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(220, 15%, 35%);
+    font-family: monospace;
+    transition: 0.5s;
+}
+
+#user-name:hover{
+    text-shadow: red 1px 0, cyan -1px 0;
+}
+
+@media (min-width: 780px) {
+    main{
+        width: 90%;
+        margin: 10vh auto;
+        box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+        flex-direction: row;
+        border-radius: 37.5px;
+        gap: 1.25rem;
+    }
+
+    .result{
+        border-radius: 37.5px;
+        gap: 4.5rem;
+        padding: 2.25rem 1rem;
+    }
+
+    h1, h2{
+        font-size: 1.3rem;
+    }
+
+    .circle{
+        width: 50%;
+    }
+
+    .circle p{
+        font-size: 1rem;
+    }
+    
+    .score{
+        font-size: 4.5rem;
+    }
+
+    .summary{
+        padding: 2.25rem 1.75rem 2.25rem 0;
+    }
+}
+
