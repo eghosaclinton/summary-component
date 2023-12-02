@@ -173,6 +173,9 @@ h2, p{
     margin: 0;
 }
 
+footer{
+    margin-top: 5vh;
+}
 
 .attribution {
     font-size: 11px;
